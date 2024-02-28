@@ -40,7 +40,8 @@ If you found this code useful, please cite:
 
 ## Creating the environment
 ```{bash}
-conda env create -f environment.yml
+chmod +x scripts/setup.sh
+./scripts/setup.sh
 ```
 
 ## Training the model

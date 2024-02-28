@@ -3,7 +3,6 @@ channels:
   - nvidia
   - conda-forge
   - defaults
-  - pyg
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
@@ -19,13 +18,19 @@ dependencies:
   - backports=1.0=pyhd8ed1ab_3
   - backports.functools_lru_cache=1.6.4=pyhd8ed1ab_0
   - beautifulsoup4=4.11.1=pyha770c72_0
+  - binutils=2.39=hdd6e379_1
+  - binutils_impl_linux-64=2.39=he00db2b_1
+  - binutils_linux-64=2.39=h5fc0e48_13
   - bleach=5.0.1=pyhd8ed1ab_0
   - brotlipy=0.7.0=py38h0a891b7_1005
   - bzip2=1.0.8=h7f98852_4
+  - c-ares=1.27.0=hd590300_0
+  - c-compiler=1.7.0=hd590300_0
   - ca-certificates=2024.2.2=hbcca054_0
   - cffi=1.15.1=py38h4a40e3a_3
   - chardet=5.2.0=py38h578d9bd_1
   - charset-normalizer=2.1.1=pyhd8ed1ab_0
+  - cmake=3.26.4=hcfe8598_0
   - colorama=0.4.6=pyhd8ed1ab_0
   - comm=0.1.2=pyhd8ed1ab_0
   - conda=22.11.1=py38h578d9bd_1
@@ -72,6 +77,7 @@ dependencies:
   - cuda-tools=12.0.0=0
   - cuda-visual-tools=12.0.0=0
   - cudatoolkit=11.4.1=h8ab8bb3_9
+  - cxx-compiler=1.7.0=h00ab1b0_0
   - dbus=1.13.6=h5008d03_3
   - debugpy=1.6.4=py38hfa26641_0
   - decorator=5.1.1=pyhd8ed1ab_0
@@ -90,13 +96,20 @@ dependencies:
   - fonts-conda-ecosystem=1=0
   - fonts-conda-forge=1=0
   - freetype=2.12.1=hca18f0e_1
+  - gcc=12.2.0=h26027b1_13
+  - gcc_impl_linux-64=12.2.0=hcc96c02_19
+  - gcc_linux-64=12.2.0=h4798a0e_13
   - gds-tools=1.5.0.59=0
   - gettext=0.21.1=h27087fc_0
+  - giflib=5.2.1=h0b41bf4_3
   - glib=2.74.1=h6239696_1
   - glib-tools=2.74.1=h6239696_1
   - gst-plugins-base=1.21.3=h4243ec0_1
   - gstreamer=1.21.3=h25f0c4b_1
   - gstreamer-orc=0.4.33=h166bdaf_0
+  - gxx=12.2.0=h26027b1_13
+  - gxx_impl_linux-64=12.2.0=hcc96c02_19
+  - gxx_linux-64=12.2.0=hb41e900_13
   - icu=70.1=h27087fc_0
   - idna=3.4=pyhd8ed1ab_0
   - importlib-metadata=6.0.0=pyha770c72_0
@@ -121,10 +134,12 @@ dependencies:
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   - jupyterlab_server=2.18.0=pyhd8ed1ab_0
   - jupyterlab_widgets=3.0.5=pyhd8ed1ab_0
+  - kernel-headers_linux-64=2.6.32=he073ed8_17
   - keyutils=1.6.1=h166bdaf_0
   - krb5=1.20.1=hf9c8cef_0
   - lame=3.100=h166bdaf_1003
   - ld_impl_linux-64=2.39=hcc3a1bd_1
+  - lerc=4.0.0=h27087fc_0
   - libarchive=3.6.2=hc8874e4_0
   - libcap=2.66=ha37c62d_0
   - libclang13=15.0.6=default_h3a83d3e_0
@@ -141,6 +156,7 @@ dependencies:
   - libcurand=10.3.1.50=0
   - libcurand-dev=10.3.1.50=0
   - libcurand-static=10.3.1.50=0
+  - libcurl=8.2.1=h91b91d3_0
   - libcusolver=11.4.2.57=0
   - libcusolver-dev=11.4.2.57=0
   - libcusolver-static=11.4.2.57=0
@@ -148,10 +164,14 @@ dependencies:
   - libcusparse-dev=12.0.0.76=0
   - libcusparse-static=12.0.0.76=0
   - libdb=6.2.32=h9c3ff4c_0
+  - libdeflate=1.17=h0b41bf4_0
   - libedit=3.1.20191231=he28a2e2_2
+  - libev=4.33=hd590300_2
   - libevent=2.1.10=h9b69904_4
+  - libexpat=2.5.0=hcb278e6_1
   - libffi=3.4.2=h7f98852_5
   - libflac=1.4.2=h27087fc_0
+  - libgcc-devel_linux-64=12.2.0=h3b97bd3_19
   - libgcc-ng=12.2.0=h65d4601_19
   - libgcrypt=1.10.1=h166bdaf_0
   - libgfortran-ng=12.2.0=h69a702a_19
@@ -162,6 +182,7 @@ dependencies:
   - libiconv=1.17=h166bdaf_0
   - liblief=0.12.3=h27087fc_0
   - libllvm15=15.0.6=h63197d8_0
+  - libnghttp2=1.52.0=ha637b67_1
   - libnpp=12.0.0.30=0
   - libnpp-dev=12.0.0.30=0
   - libnpp-static=12.0.0.30=0
@@ -175,17 +196,24 @@ dependencies:
   - libopus=1.3.1=h7f98852_1
   - libpng=1.6.39=h753d276_0
   - libpq=15.1=h2baec63_2
+  - libsanitizer=12.2.0=h46fd767_19
   - libsndfile=1.1.0=hcb278e6_1
   - libsodium=1.0.18=h36c2ea0_1
   - libsqlite=3.40.0=h753d276_0
+  - libssh2=1.10.0=haa6b8db_3
+  - libstdcxx-devel_linux-64=12.2.0=h3b97bd3_19
   - libstdcxx-ng=12.2.0=h46fd767_19
   - libsystemd0=252=h2a991cd_0
+  - libtiff=4.5.0=h6adf6a1_2
   - libtool=2.4.7=h27087fc_0
   - libudev1=252=h166bdaf_0
   - libuuid=2.32.1=h7f98852_1000
   - libuv=1.44.2=h166bdaf_0
   - libvorbis=1.3.7=h9c3ff4c_0
+  - libwebp=1.2.4=h1daa5a0_1
+  - libwebp-base=1.2.4=h166bdaf_0
   - libxcb=1.13=h7f98852_1004
+  - libxcrypt=4.4.36=hd590300_1
   - libxkbcommon=1.0.3=he3ba5ed_0
   - libxml2=2.10.3=h7463322_0
   - libzlib=1.2.13=h166bdaf_4
@@ -258,8 +286,9 @@ dependencies:
   - qtconsole=5.4.0=pyhd8ed1ab_0
   - qtconsole-base=5.4.0=pyha770c72_0
   - qtpy=2.3.0=pyhd8ed1ab_0
-  - readline=8.1.2=h0f457ee_0
+  - readline=8.2=h8228510_1
   - requests=2.28.1=pyhd8ed1ab_1
+  - rhash=1.4.3=hd590300_2
   - ripgrep=14.1.0=he8a937b_0
   - ruamel.yaml=0.17.40=py38h01eb140_0
   - ruamel.yaml.clib=0.2.8=py38h01eb140_0
@@ -270,6 +299,7 @@ dependencies:
   - soupsieve=2.3.2.post1=pyhd8ed1ab_0
   - sqlite=3.40.0=h4ff8645_0
   - stack_data=0.6.2=pyhd8ed1ab_0
+  - sysroot_linux-64=2.12=he073ed8_17
   - terminado=0.17.1=pyh41d4057_0
   - tinycss2=1.2.1=pyhd8ed1ab_0
   - tk=8.6.12=h27826a3_0
@@ -288,8 +318,13 @@ dependencies:
   - xcb-util-keysyms=0.4.0=h166bdaf_0
   - xcb-util-renderutil=0.3.9=h166bdaf_0
   - xcb-util-wm=0.4.1=h166bdaf_0
+  - xorg-kbproto=1.0.7=h7f98852_1002
+  - xorg-libx11=1.6.12=h36c2ea0_0
   - xorg-libxau=1.0.9=h7f98852_0
   - xorg-libxdmcp=1.1.3=h7f98852_0
+  - xorg-libxext=1.3.4=h516909a_0
+  - xorg-xextproto=7.3.0=h0b41bf4_1003
+  - xorg-xproto=7.0.31=h7f98852_1007
   - xz=5.2.6=h166bdaf_0
   - yaml=0.2.5=h7f98852_2
   - zeromq=4.3.4=h9c3ff4c_1
@@ -298,7 +333,6 @@ dependencies:
   - zstandard=0.19.0=py38h5eee18b_0
   - zstd=1.5.2=h6239696_4
   - pip:
-      - --extra-index-url https://download.pytorch.org/whl/cu111
       - absl-py==1.3.0
       - alembic==1.11.3
       - altair==4.2.2
@@ -316,8 +350,6 @@ dependencies:
       - contourpy==1.0.6
       - cycler==0.11.0
       - databricks-cli==0.17.7
-        #- dlib
-        #- dlib==19.24.0
       - docker==6.1.3
       - docker-pycreds==0.4.0
       - face-recognition==1.3.0
@@ -407,6 +439,7 @@ dependencies:
       - termcolor==2.2.0
       - threadpoolctl==3.1.0
       - toolz==0.12.0
+      - --extra-index-url https://download.pytorch.org/whl/cu111
       - torch==1.10.0+cu111
       - torch-scatter @ https://data.pyg.org/whl/torch-1.10.0%2Bcu113/torch_scatter-2.0.9-cp38-cp38-linux_x86_64.whl#sha256=6f8f3b983c79603fd6789c6a038f298e9fa0ab56474b5ce787916f96efa03920
       - torchdiffeq==0.0.1
